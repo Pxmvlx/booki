@@ -1,0 +1,351 @@
+/****** General ***********/
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+}
+
+.fa-solid, .fa-regular {
+    color: var(--main-color);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+img {
+    max-width: 100%;
+}
+
+.main-container {
+    width: 100%;
+    padding: 0 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/***** added ***/
+
+
+header {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1440px;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-img {
+    height: 25px;
+    
+}
+
+
+.nav-links {
+    list-style: none;
+    padding:0;
+    margin:0;
+    text-align: right;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    display: flex;
+    border-top-color: transparent;
+    border-top-style: solid;
+    border-top-width: 2px;
+    align-items: center;
+}
+
+.nav-link:hover {
+    color: var(--main-color);
+    border-top-color: #0065FC;
+}
+
+.headerfindacommondation {
+    text-align: left; /* Align text to the left */
+    padding: 20px; /* Add padding as needed */
+    width: 1040px;
+    height: 53px;
+}
+
+.section-title {
+    margin: 0;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.info-section {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align the content to the left */
+    padding: 10px; /* Add padding as needed */
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.filter, .search-bar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.location-icon {
+    margin-right: 10px; /* Add margin for spacing */
+}
+
+.filter-buttons {
+    margin-right: 15px; /* Add margin for spacing */
+}
+.filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.filter-text {
+    font-size: 18px;
+    font-weight: 700;
+    height: 21.13px;
+    align-items: center;
+}
+.filter-buttons{
+    border-radius: 25px;
+    border: 2px solid #D9D9D9;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    gap: 10px;
+    display: flex;
+    padding: 4px 19px 4px 19px;
+}
+.filter-buttons:hover{
+    text-decoration: none;
+    background-color: #DEEBFF;
+}
+
+.filter-buttons .fas {
+    color: var(--main-color);
+}
+
+.info {
+    display: flex;
+    gap: 10px;
+}
+.info-circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 1px;
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.info-text {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 700;
+
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card img {
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 16px;
+}
+
+.euro {
+    font-weight: 700;
+}
+
+.neutralStar {
+    color: var(--main-bg-color)
+}
+
+
+
+/****** Accommodation And Popular ***********/
+.accommodation-and-popular {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accommodation-and-popular section {
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/****** Accommodation ***********/
+.accommodation {
+    width: 65%;
+    
+}
+
+.accommodation-cards {
+    display:flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between; 
+    gap: 10px;
+}
+ 
+.accommodation-cards .card {
+    width: 30%;
+    /* margin-top: 15px; */
+    /* margin-bottom: 50px; */
+    /* padding: 10px; */
+    /* display: flex;   */
+    /* flex-wrap: wrap; */
+    /* justify-content: flex-start; */
+}
+
+.accommodation-cards .card img{
+    height: 100px;
+    object-fit: cover;
+    width: 100%;
+
+}
+
+.accommodation-title {
+    display:flex;
+    justify-content:space-between;
+   align-items: center;
+   
+}
+
+
+
+
+/****** Popular ***********/
+.popular {
+    width: 32%;
+}
+
+.popular-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.popular-cards{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    justify-content: space-around;
+    
+}
+
+
+.popular-cards .card {
+    width: 369px;
+    height: 146px;
+    display: flex;
+    border-radius: 20px;
+    margin-top: 33px;
+    flex-direction: row;
+
+
+}
+
+
+.popular-cards img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.popular-cards .card-text {
+    Padding: 20px 19px;
+    font-weight: 700;
+
+}
+
+.popular-cards .card-content {
+    width: 67%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.popular-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.popular-cards .card-subtitle {
+    margin: 0px;
+    
+}
+
+.popular-cards .card-rating {
+    margin-bottom: 5px;
+}
+
+
+/**** Things to do in Paris ****/
+
+.paris-cards{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    justify-content: space-around;
+    
+}
+
+.paris-cards .card-text {
+    Padding: 20px 19px;
+    font-weight: 700;
+
+}
+
+
+
+
+
+
+.footer-section-text {
+    background-color: #F2F2F2;
+    padding: 20px
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
